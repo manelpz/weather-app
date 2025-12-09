@@ -9,4 +9,4 @@ export default {
 
 export const CityExample = () => (<CityInfo city={"CDMX"} country={"Mexico"} />);
 
-export const AnotherCityExample = () => (<CityInfo city={"Buenos Aires"} country={"Argentina"} />);
+//export const AnotherCityExample = () => (<CityInfo city={"Buenos Aires"} country={"Argentina"} />);
