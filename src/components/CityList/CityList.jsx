@@ -5,7 +5,7 @@ import CityInfo from '../CityInfo';
 import Weather from '../Weather';
 
 const renderCityAndCountry = ({ city, country }) => (
-  <Box key={city} sx={{ width: '100%', mb: 2 }}>
+  <Box key={city} sx={{ width: '100%', mb: 2 }} role="listitem">
     <Grid
       container
       alignItems="center"

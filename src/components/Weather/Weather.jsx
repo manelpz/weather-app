@@ -9,6 +9,8 @@ import {WiCloud,
 } from 'react-icons/wi'
 import {IconContext} from 'react-icons'
 
+const validValues = ["cloud", "sunny", "fog", "cloudy", "rain"];
+
 const stateByName = {
   "cloud": WiCloud,
   "sunny": WiDaySunny,
@@ -29,14 +31,15 @@ export const Weather = ({temperature, state}) => {
         {renderState(state)}
       </IconContext.Provider>
       <Typography display="inline" variant="h2">{temperature}</Typography>
-      </div>
+    </div>
   )
 }
  
 
 Weather.prototype = {
     temperature: PropTypes.number.isRequired,
-    state: PropTypes.string.isRequired
+    state: PropTypes.oneOf(validValues).isRequired,
+
 }
 
 export default Weather
